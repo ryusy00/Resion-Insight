@@ -157,11 +157,11 @@ a {
 }
 
 .letter-r {
-  width: clamp(190px, 22vw, 320px);
+    width: clamp(280px, 13vw, 318px);
 }
 
 .letter-i {
-  width: clamp(83px, 7vw, 117px);
+    width: clamp(89px, 13vw, 101px);
 }
 
 .letter-svg {
@@ -600,6 +600,11 @@ a {
   margin-right: 16px;
 }
 
+@media (max-width: 1880px) {
+  .brand-signature span {
+    font-size: clamp(25px, 3.9vw, 32px);
+  }
+}
 @media (max-width: 720px) {
   .site-header {
     height: 72px;
@@ -615,7 +620,7 @@ a {
   }
 
   .hero {
-    padding-top: 100px;
+    padding: 5rem 5rem 2rem;
   }
 
   .logo-menu {
@@ -627,28 +632,20 @@ a {
     margin-top: -22px;
   }
 
-  .letter-r .hover-label,
-  .letter-i .hover-label {
-    right: auto;
-    bottom: -5px;
-    left: 50%;
-    font-size: 14px;
-    transform: translate(-50%, 8px);
+  .brand-signature strong {
+    font-size: clamp(54px, 3.9vw, 72px);
+    font-weight: 900;
   }
-
-  .letter-r:hover .hover-label,
-  .letter-r:focus-visible .hover-label,
-  .letter-i:hover .hover-label,
-  .letter-i:focus-visible .hover-label {
-    transform: translate(-50%, 0);
+  .brand-signature span {
+    font-size: clamp(20px, 4.9vw, 24px);
   }
 
   .letter-r {
-    width: min(58vw, 260px);
+    width: min(58vw, 205px);
   }
 
   .letter-i {
-    width: min(18vw, 82px);
+    width: min(18vw, 74px);
   }
 
   .wave {
@@ -1165,6 +1162,33 @@ a {
 }
 
 @media (max-width: 560px) {
+  .hero {
+    padding: 5rem 3rem 2rem;
+  }
+  .letter-button {
+    padding-bottom: 30px;
+  }
+  .letter-r {
+    width: min(58vw, 160px);
+  }
+  .letter-i {
+    width: min(18vw, 58px);
+  }
+  .letter-r .hover-label {
+    right: calc(100% + 20px);
+    bottom: 60px;
+  }
+  .letter-i .hover-label {
+    left: calc(100% + 20px);
+    bottom: 60px;
+  }
+  .brand-signature strong {
+    font-size: clamp(44px, 3.9vw, 60px);
+    font-weight: 900;
+  }
+  .brand-signature span {
+    font-size: clamp(17px, 4.9vw, 20px);
+  }
   .introduction-page {
     padding-inline: 18px;
   }
